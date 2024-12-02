@@ -93,8 +93,62 @@
 <a href="https://wa.me/55123456789" target="_blank">Entrar em contato via WhatsApp</a>
 
 <a href="mailto:contato@exemplo.com?subject=Olá%20Mundo&body=Como%20vai%20você?">Enviar e-mail com mensagem</a>
+<br><br>
 
+    <form action="processar.php" method="post">
+        <!-- Nome completo -->
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+        <br><br>
+        
+        <!-- E-mail -->
+        <label>E-mail:</label>
+        <input type="email" name="email" required>
+        <br><br>
+        
+        <!-- Data de nascimento -->
+        <label>Data de Nascimento:</label>
+        <input type="date" name="nascimento" required>
+        <br><br>
+        
+        <!-- Senha -->
+        <label>Senha:</label>
+        <input type="password" name="senha" required>
+        <br><br>
+        
+        <!-- Telefone -->
+        <label>Telefone:</label>
+        <input type="tel" name="telefone" required>
+        <br><br>
+        
+        <!-- País -->
+        <label>País:</label>
+        <select name="pais" required>
+            <option value="brasil">Brasil</option>
+            <option value="portugal">Portugal</option>
+            <option value="eua">EUA</option>
+        </select>
+        <br><br>
+        
+        <!-- Gênero -->
+        <label>Gênero:</label>
+        <input type="radio" name="genero" value="masculino" required> Masculino
+        <input type="radio" name="genero" value="feminino" required> Feminino
+        <input type="radio" name="genero" value="outro" required> Outro
+        <br><br>
+        
+        <!-- Termos -->
+        <input type="checkbox" name="termos" required> Aceito os termos
+        <br><br>
+        
+        <!-- Comentários -->
+        <label>Comentários:</label>
+        <textarea name="comentarios"></textarea>
+        <br><br>
+        
+        <!-- Botões -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
 </body>
 </html>
-
-
